@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_piste-2-module_piste-2-module,piste-2-module.piste-2-module,model_piste-2-module_piste-2-module,base.group_user,1,1,1,1

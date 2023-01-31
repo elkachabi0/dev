@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="piste-2-module.list">
+      <field name="name">piste-2-module list</field>
+      <field name="model">piste-2-module.piste-2-module</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </tree>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="piste-2-module.action_window">
+      <field name="name">piste-2-module window</field>
+      <field name="res_model">piste-2-module.piste-2-module</field>
+      <field name="view_mode">tree,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="piste-2-module.action_server">
+      <field name="name">piste-2-module server</field>
+      <field name="model_id" ref="model_piste-2-module_piste-2-module"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "tree,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="piste-2-module" id="piste-2-module.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="piste-2-module.menu_1" parent="piste-2-module.menu_root"/>
+    <menuitem name="Menu 2" id="piste-2-module.menu_2" parent="piste-2-module.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="piste-2-module.menu_1_list" parent="piste-2-module.menu_1"
+              action="piste-2-module.action_window"/>
+    <menuitem name="Server to list" id="piste-2-module" parent="piste-2-module.menu_2"
+              action="piste-2-module.action_server"/>
+-->
+  </data>
+</odoo>
